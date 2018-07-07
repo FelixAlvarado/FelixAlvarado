@@ -325,6 +325,9 @@ button:focus {
 /*==========================
         3.NAVBAR
 ============================*/
+.nav-name {
+    color: white;
+}
 
 .custom-nav {
     padding: 15px 0px;
@@ -560,7 +563,10 @@ button:focus {
 /*==========================
         5.ABOUT ME
 ============================*/
-
+.img-about {
+    width: 250px;
+    height:250px
+}
 .about-detail {
     max-width: 850px;
 }
