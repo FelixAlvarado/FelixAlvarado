@@ -54,36 +54,36 @@
     },
 
     //Funfacts
-    ElvishApp.prototype.initFunFacts = function() {
-        var a = 0;
-        $(window).on('scroll',function() {
-            var oTop = $('#counter').offset().top - window.innerHeight;
-            if (a == 0 && $(window).scrollTop() > oTop) {
-                $('.lan_fun_value').each(function() {
-                    var $this = $(this),
-                        countTo = $this.attr('data-count');
-                    $({
-                        countNum: $this.text()
-                    }).animate({
-                            countNum: countTo
-                        },
-                        {
-                            duration: 2000,
-                            easing: 'swing',
-                            step: function() {
-                                $this.text(Math.floor(this.countNum));
-                            },
-                            complete: function() {
-                                $this.text(this.countNum);
-                                //alert('finished');
-                            }
+    // ElvishApp.prototype.initFunFacts = function() {
+    //     var a = 0;
+    //     $(window).on('scroll',function() {
+    //         var oTop = $('#counter').offset().top - window.innerHeight;
+    //         if (a == 0 && $(window).scrollTop() > oTop) {
+    //             $('.lan_fun_value').each(function() {
+    //                 var $this = $(this),
+    //                     countTo = $this.attr('data-count');
+    //                 $({
+    //                     countNum: $this.text()
+    //                 }).animate({
+    //                         countNum: countTo
+    //                     },
+    //                     {
+    //                         duration: 2000,
+    //                         easing: 'swing',
+    //                         step: function() {
+    //                             $this.text(Math.floor(this.countNum));
+    //                         },
+    //                         complete: function() {
+    //                             $this.text(this.countNum);
+    //                             //alert('finished');
+    //                         }
 
-                        });
-                });
-                a = 1;
-            }
-        });
-    },
+    //                     });
+    //             });
+    //             a = 1;
+    //         }
+    //     });
+    // },
 
     //Portfolio Filter
     ElvishApp.prototype.initPortfolioFilter = function() {
@@ -187,7 +187,7 @@
         this.initNavbarStickey();
         this.initNavbarSmooth();
         this.initNavbarScrollSpy();
-        this.initFunFacts();
+        // this.initFunFacts();
         this.initPortfolioFilter();
         this.initMfpImages();
         this.initClientSlider();
