@@ -972,6 +972,14 @@ button:focus {
         15.CONTACT US
 ============================*/
 
+.contact-center {
+    justify-content: center;    
+}
+
+.margin-email {
+    margin-right: 70px;
+}
+
 .form-sub-title {
     font-size: 15px;
     line-height: 24px;
